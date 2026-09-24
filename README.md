@@ -7,8 +7,6 @@ This repository demonstrates how to use **John the Ripper (JTR)** for password a
 
 ---
 
-## 🚀 Getting Started
-
 # Installation
 Follow the official JTR installation guide: [John the Ripper Documentation](https://www.openwall.com/john/)
 
@@ -41,13 +39,11 @@ Cracking Process: The extracted hashes were supplied to the Networkwalks Passwor
 
 ## Results
 
-| Target| Recovered
-          password |      Captured Flag                       | Methods used
-
-|-------|--------- |            -------                       | 
-| PDF 1 |Password 1| nw{networkwalks_flag1_jtr_270521_1}      |                  |
-|  PDF 2|Password1 | nw{networkwalks_persistance_jtr_270521}  | Moderate              |
-| PDF 3 |1qaz2wsx  | nw{networkwalks_flag_260821_1}           | Slow but secure                       |
+| Target| Recovered password |      Captured Flag                       | Methods used     |
+|-------|---------           |     ----------------------               | ---------------  | 
+| PDF 1 |Password 1          | nw{networkwalks_flag1_jtr_270521_1}      |  JTR/Johnny      |
+|  PDF 2|Password1           | nw{networkwalks_persistance_jtr_270521}  |  JTR/Johnny      |
+| PDF 3 |1qaz2wsx            | nw{networkwalks_flag_260821_1}           |  JTR/Johnny      |
 
 The dictionary attacks recovered the passwords for all three target PDF files and enabled the associated flags to be captured.
 
