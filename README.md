@@ -14,10 +14,20 @@ Follow the official JTR installation guide: [John the Ripper Documentation](http
 
 # Objectives
 
-Demonstrate the process of recovering passwords from protected PDF files by extracting their hashes and using dictionary attacks.
-Compare the methodology of a local John the Ripper (JTR) installation with the web-based Network walks tools.
+▪️Demonstrate the process of recovering passwords from protected PDF files by extracting their hashes and using dictionary attacks.
 
-# Methodology
+▪️Compare the methodology of a local John the Ripper (JTR) installation with the web-based Network walks tools.
+
+## Environment & Tools 
+
+| Category          | Tools                                                             |
+|-----------        |-------------|
+| Operating system  | Windows                                                           |
+| Hash Extraction   | Online Hash Extractor, Networkwalks Hash Calculator               |
+| Password cracking | John the Ripper (JTR)/ Johnny GUI, Networkwalks Password Cracker  |
+
+
+## Methodology
 
 ## Module 1 — John the Ripper (JTR)
 Hash Extraction: The online tool at onlinehashcrack.com was used to extract the $pdf$ hashes from the locked PDF files.
@@ -28,9 +38,20 @@ Cracking Process: The hash files were imported into the Johnny GUI, which provid
 
 Hash Extraction: The target PDF files were uploaded to the Networkwalks Hash Calculator to parse the files and extract their hashes within the web browser.
 Cracking Process: The extracted hashes were supplied to the Networkwalks Password Cracker, where its built-in wordlist attack was executed to recover the passwords.
-Results
 
-# Mitigation & Remediation Strategies
+## Results
+
+| Target| Recovered
+          password |      Captured Flag                       | Methods used
+
+|-------|--------- |            -------                       | 
+| PDF 1 |Password 1| nw{networkwalks_flag1_jtr_270521_1}      |                  |
+|  PDF 2|Password1 | nw{networkwalks_persistance_jtr_270521}  | Moderate              |
+| PDF 3 |1qaz2wsx  | nw{networkwalks_flag_260821_1}           | Slow but secure                       |
+
+The dictionary attacks recovered the passwords for all three target PDF files and enabled the associated flags to be captured.
+
+## Mitigation & Remediation Strategies
 
 To reduce the likelihood of successful offline dictionary attacks, the following controls and policies should be implemented:
 
