@@ -3,7 +3,7 @@
 # 🔐 JTR Password Hacking (Educational)
 
 This repository demonstrates how to use **John the Ripper (JTR)** for password auditing and security awareness in **authorized environments only**.  
-⚠️ Unauthorized password cracking is illegal. This project is strictly for **educational, research, and penetration testing practice** with proper authorization.
+⚠️ Unauthorized password cracking is illegal. This project is strictly for **educational, research, and penetration testing practice** with proper authorization.This project documents a controlled cybersecurity lab focused on recovering passwords from protected PDF files by extracting PDF hashes and performing dictionary attacks. The exercise compares a local John the Ripper (JTR) / Johnny workflow with the Networkwalks web-based tools.
 
 ---
 
